@@ -19,7 +19,7 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          [],
+          [('W ignore', None, 'OPTION')],
           exclude_binaries=True,
           name='covid19-data-viewer',
           debug=False,
